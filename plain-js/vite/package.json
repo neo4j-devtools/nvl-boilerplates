@@ -1,0 +1,15 @@
+{
+  "name": "nvl-boilerplate",
+  "version": "0.3.1",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "vite": "^4.0.1"
+  },
+  "dependencies": {
+    "@neo4j-nvl/base": "^0.3.4",
+    "@neo4j-nvl/interaction-handlers": "^0.3.4"
+  }
+}
