@@ -6,7 +6,7 @@ module.exports = () => ({
   entry: './src/index.js',
   module: {
     rules: [{
-      test: /\.jsx$/,
+      test: /\.js/,
       exclude: /node_modules|dist/,
       use: 'babel-loader'
     }]
