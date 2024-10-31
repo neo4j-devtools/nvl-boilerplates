@@ -15,7 +15,7 @@
     "webpack-dev-server": "^5.1.0"
   },
   "dependencies": {
-    "@neo4j-nvl/base": "^0.3.5",
-    "@neo4j-nvl/interaction-handlers": "^0.3.5"
+    "@neo4j-nvl/base": "^0.3.6",
+    "@neo4j-nvl/interaction-handlers": "^0.3.6"
   }
 }
