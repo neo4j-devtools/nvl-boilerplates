@@ -1,0 +1,17 @@
+{
+  "name": "nvl-boilerplate-react-typescript-vite",
+  "version": "0.3.7",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "vite": "^5.4.9"
+  },
+  "dependencies": {
+    "@neo4j-nvl/react": "^0.3.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
