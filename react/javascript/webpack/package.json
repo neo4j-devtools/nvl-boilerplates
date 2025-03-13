@@ -1,6 +1,6 @@
 {
-  "name": "nvl-boilerplate-react-webpack",
-  "version": "0.3.5",
+  "name": "nvl-boilerplate-react-js-webpack",
+  "version": "0.3.7",
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack"

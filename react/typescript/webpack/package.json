@@ -1,5 +1,5 @@
 {
-  "name": "nvl-boilerplate-react-typescript-webpack",
+  "name": "nvl-boilerplate-react-ts-webpack",
   "version": "0.3.7",
   "scripts": {
     "start": "webpack-dev-server",

@@ -1,5 +1,5 @@
 {
-  "name": "nvl-boilerplate-typescript-vite",
+  "name": "nvl-boilerplate-plain-ts-vite",
   "version": "0.3.7",
   "scripts": {
     "dev": "vite",
