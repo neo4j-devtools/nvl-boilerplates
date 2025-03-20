@@ -6,11 +6,14 @@
     "build": "vite build"
   },
   "devDependencies": {
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
     "typescript": "^5.8.2",
     "vite": "^5.4.9"
   },
   "dependencies": {
-    "@neo4j-nvl/react": "^0.3.7",
+    "@neo4j-nvl/base": "0.3.7",
+    "@neo4j-nvl/react": "0.3.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
