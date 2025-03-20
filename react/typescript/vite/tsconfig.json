@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "module": "NodeNext",
+    "module": "nodenext",
     "strict": true,
     "jsx": "react",
     "skipLibCheck": true,
