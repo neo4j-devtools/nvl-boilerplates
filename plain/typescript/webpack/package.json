@@ -1,21 +1,20 @@
 {
-  "name": "nvl-boilerplate-plainjs-webpack",
-  "version": "0.3.5",
+  "name": "nvl-boilerplate-plain-ts-webpack",
+  "version": "0.3.7",
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack"
   },
   "devDependencies": {
-    "@babel/core": "^7.25.8",
-    "@babel/preset-env": "^7.25.8",
-    "babel-loader": "^9.2.1",
     "html-webpack-plugin": "^5.6.0",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.2",
     "webpack": "^5.95.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.1.0"
   },
   "dependencies": {
-    "@neo4j-nvl/base": "^0.3.7",
-    "@neo4j-nvl/interaction-handlers": "^0.3.7"
+    "@neo4j-nvl/base": "0.3.7",
+    "@neo4j-nvl/interaction-handlers": "0.3.7"
   }
 }
