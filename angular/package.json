@@ -1,20 +1,10 @@
 {
-  "name": "nvl-boilerplate-angular-webpack",
+  "name": "nvl-boilerplate-angular-vite",
   "version": "0.3.9",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "serve": "ng serve",
     "build": "ng build"
-  },
-  "prettier": {
-    "overrides": [
-      {
-        "files": "*.html",
-        "options": {
-          "parser": "angular"
-        }
-      }
-    ]
   },
   "private": true,
   "dependencies": {
