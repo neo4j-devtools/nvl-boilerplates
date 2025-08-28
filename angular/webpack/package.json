@@ -1,11 +1,10 @@
 {
-  "name": "webpack-angular",
-  "version": "0.0.0",
+  "name": "nvl-boilerplate-angular-webpack",
+  "version": "0.3.9",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development"
+    "build": "ng build"
   },
   "prettier": {
     "overrides": [
@@ -26,7 +25,6 @@
     "@neo4j-nvl/base": "^0.3.9",
     "@neo4j-nvl/interaction-handlers": "^0.3.9",
     "rxjs": "~7.8.0",
-    "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
