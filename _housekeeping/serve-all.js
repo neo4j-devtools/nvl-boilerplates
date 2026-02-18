@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const { spawn } = require("child_process");
 
-const ROOT = __dirname;
+const ROOT = path.join(__dirname, "..");
 
 function usage() {
   console.log(

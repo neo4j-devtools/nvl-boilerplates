@@ -39,5 +39,5 @@ function processFolder(folderPath) {
   }
 }
 
-const rootFolder = path.join(__dirname);
+const rootFolder = path.join(__dirname, "..");
 processFolder(rootFolder);
