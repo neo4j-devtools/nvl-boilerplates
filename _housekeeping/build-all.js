@@ -29,6 +29,6 @@ function processFolder(folderPath) {
 }
 
 folders.forEach((folder) => {
-  const folderPath = path.join(__dirname, folder);
+  const folderPath = path.join(__dirname, "..", folder);
   processFolder(folderPath);
 });
