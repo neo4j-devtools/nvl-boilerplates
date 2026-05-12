@@ -50,7 +50,7 @@ export class App implements AfterViewInit, OnDestroy {
 
     const options: NvlOptions = {
       initialZoom: 2.6,
-      // disableWebWorkers: true
+      disableWebWorkers: true,
     };
 
     try {
