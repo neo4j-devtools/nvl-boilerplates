@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "projects": {
+    "nvl-angular": {
+      "projectType": "application",
+      "root": "",
+      "sourceRoot": "src",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "browser": "src/main.ts",
+            "polyfills": ["zone.js"],
+            "tsConfig": "tsconfig.json",
+            "allowedCommonJsDependencies": [
+              "@segment/facade",
+              "@segment/analytics.js-video-plugins",
+              "concaveman",
+              "lodash",
+              "cytoscape-cose-bilkent",
+              "@neo4j-bloom/dagre",
+              "bin-pack",
+              "graphlib",
+              "resizelistener"
+            ]
+          },
+          "configurations": {
+            "development": {},
+            "production": {}
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "vite-angular:build:production"
+            },
+            "development": {
+              "buildTarget": "vite-angular:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": false
+  }
+}

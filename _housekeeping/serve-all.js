@@ -7,14 +7,14 @@ const ROOT = path.join(__dirname, "..");
 
 function usage() {
   console.log(
-    "Usage: node serve-all-logs.js [--start-port=3000] [--folders=plain,react] [--verbose]"
+    "Usage: node serve-all-logs.js [--start-port=3000] [--folders=angular,plain,react] [--verbose]"
   );
 }
 
 const argv = process.argv.slice(2);
 const opts = {
   startPort: 3000,
-  folders: ["plain", "react"],
+  folders: ["angular", "plain", "react"],
   verbose: false,
 };
 
