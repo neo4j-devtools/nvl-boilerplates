@@ -15,21 +15,24 @@ function runCommands(folder, isTS) {
 }
 
 function processFolder(folderPath) {
+  if (fs.existsSync(path.join(folderPath, "package.json"))) {
+    const isTS = fs.existsSync(path.join(folderPath, "tsconfig.json"));
+    runCommands(folderPath, isTS);
+    return;
+  }
+
   const items = fs.readdirSync(folderPath);
   for (const item of items) {
+    if (item.startsWith('.') || item === 'node_modules' || item === 'dist') {
+      continue;
+    }
     const itemPath = path.join(folderPath, item);
     if (fs.statSync(itemPath).isDirectory()) {
-      if (fs.existsSync(path.join(itemPath, "package.json"))) {
-        const isTS = fs.existsSync(path.join(itemPath, "tsconfig.json"));
-        runCommands(itemPath, isTS);
-      } else {
-        processFolder(itemPath);
-      }
+      processFolder(itemPath);
     }
   }
 }
 
 folders.forEach((folder) => {
-  const folderPath = path.join(__dirname, "..", folder);
-  processFolder(folderPath);
+  processFolder(path.join(__dirname, "..", folder));
 });
