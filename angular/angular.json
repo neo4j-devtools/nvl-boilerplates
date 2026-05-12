@@ -1,5 +1,4 @@
 {
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "projects": {
     "vite-angular": {
@@ -21,12 +20,13 @@
               "cytoscape-cose-bilkent",
               "@neo4j-bloom/dagre",
               "bin-pack",
-              "graphlib"
+              "graphlib",
+              "resizelistener"
             ]
           },
           "configurations": {
-            "production": {},
-            "development": {}
+            "development": {},
+            "production": {}
           },
           "defaultConfiguration": "production"
         },
@@ -41,9 +41,6 @@
             }
           },
           "defaultConfiguration": "development"
-        },
-        "extract-i18n": {
-          "builder": "@angular/build:extract-i18n"
         }
       }
     }
