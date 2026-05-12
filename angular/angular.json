@@ -10,7 +10,7 @@
           "builder": "@angular/build:application",
           "options": {
             "browser": "src/main.ts",
-            "polyfills": ["zone.js"],
+            "polyfills": [],
             "tsConfig": "tsconfig.json",
             "allowedCommonJsDependencies": [
               "@segment/facade",
