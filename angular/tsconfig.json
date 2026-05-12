@@ -4,9 +4,7 @@
     "module": "preserve",
     "experimentalDecorators": true,
     "skipLibCheck": true,
-    "isolatedModules": true,
-    "strict": true,
-    "outDir": "./out-tsc/app"
+    "isolatedModules": true
   },
   "include": ["src/**/*.ts"]
 }
