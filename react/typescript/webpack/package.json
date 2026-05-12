@@ -6,7 +6,7 @@
     "build": "webpack"
   },
   "devDependencies": {
-    "@types/react": "^19.0.10",
+    "@types/react": "^19.0.12",
     "@types/react-dom": "^19.0.4",
     "html-webpack-plugin": "^5.6.0",
     "ts-loader": "^9.5.2",

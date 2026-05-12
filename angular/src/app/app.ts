@@ -31,7 +31,6 @@ export class App implements AfterViewInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    // Clean up interactions and NVL instance
     this.zoom?.destroy?.();
     this.pan?.destroy?.();
     this.nvl?.destroy?.();
@@ -51,7 +50,7 @@ export class App implements AfterViewInit, OnDestroy {
 
     const options: NvlOptions = {
       initialZoom: 2.6,
-      disableWebWorkers: true,
+      // disableWebWorkers: true
     };
 
     try {

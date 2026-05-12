@@ -2,12 +2,13 @@ const fs = require("fs");
 const path = require("path");
 const { execSync } = require("child_process");
 
-const folders = ["plain", "react"];
+const folders = ["angular", "plain", "react"];
 
 function runCommands(folder, isTS) {
   console.log(`Running commands in ${folder}`);
   execSync("npm install", { stdio: "inherit", cwd: folder });
-  if (isTS) {
+  const isAngular = fs.existsSync(path.join(folder, "angular.json"));
+  if (isTS && !isAngular) {
     execSync("npx tsc", { stdio: "inherit", cwd: folder });
   }
   execSync("npm run build", { stdio: "inherit", cwd: folder });
