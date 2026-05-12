@@ -23,7 +23,7 @@ function processFolder(folderPath) {
 
   const items = fs.readdirSync(folderPath);
   for (const item of items) {
-    if (item.startsWith('.') || item === 'node_modules' || item === 'dist') {
+    if (item.startsWith(".") || item === "node_modules" || item === "dist") {
       continue;
     }
     const itemPath = path.join(folderPath, item);
