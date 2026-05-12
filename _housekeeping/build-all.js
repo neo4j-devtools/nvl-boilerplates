@@ -6,6 +6,22 @@ const folders = ["angular", "plain", "react"];
 
 function runCommands(folder, isTS) {
   console.log(`Running commands in ${folder}`);
+  const lockFiles = ["package-lock.json", "yarn.lock"];
+  const nodeModules = path.join(folder, "node_modules");
+
+  for (const lockFile of lockFiles) {
+    const lockPath = path.join(folder, lockFile);
+    if (fs.existsSync(lockPath)) {
+      fs.unlinkSync(lockPath);
+      console.log(`  Removed ${lockFile}`);
+    }
+  }
+
+  if (fs.existsSync(nodeModules)) {
+    fs.rmSync(nodeModules, { recursive: true, force: true });
+    console.log(`  Removed node_modules`);
+  }
+
   execSync("npm install", { stdio: "inherit", cwd: folder });
   const isAngular = fs.existsSync(path.join(folder, "angular.json"));
   if (isTS && !isAngular) {
