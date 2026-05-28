@@ -1,6 +1,7 @@
 node_modules
 dist
 lib
+.next
 yarn.lock
 package-lock.json
 .angular

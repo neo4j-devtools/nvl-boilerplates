@@ -14,7 +14,7 @@ function usage() {
 const argv = process.argv.slice(2);
 const opts = {
   startPort: 3000,
-  folders: ["angular", "plain", "react"],
+  folders: ["angular", "nextjs", "plain", "react"],
   verbose: false,
 };
 

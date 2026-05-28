@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const { execSync } = require("child_process");
 
-const folders = ["angular", "plain", "react"];
+const folders = ["angular", "nextjs", "plain", "react"];
 
 function runCommands(folder, isTS) {
   console.log(`Running commands in ${folder}`);
