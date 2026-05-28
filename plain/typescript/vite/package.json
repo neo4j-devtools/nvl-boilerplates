@@ -10,7 +10,7 @@
     "vite": "^5.4.9"
   },
   "dependencies": {
-    "@neo4j-nvl/base": "^1.1.0",
-    "@neo4j-nvl/interaction-handlers": "^1.1.0"
+    "@neo4j-nvl/base": "1.2.0",
+    "@neo4j-nvl/interaction-handlers": "1.2.0"
   }
 }
