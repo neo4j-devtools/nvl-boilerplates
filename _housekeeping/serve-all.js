@@ -61,7 +61,7 @@ function findDistDirs(base) {
       }
       if (!stat.isDirectory()) continue;
       if (it === "node_modules") continue;
-      if (it === "dist") results.push(p);
+      if (it === "dist" || it === "out") results.push(p);
       else walk(p);
     }
   }
