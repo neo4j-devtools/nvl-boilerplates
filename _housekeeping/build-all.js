@@ -8,7 +8,8 @@ function runCommands(folder, isTS) {
   console.log(`Running commands in ${folder}`);
   execSync("npm install", { stdio: "inherit", cwd: folder });
   const isAngular = fs.existsSync(path.join(folder, "angular.json"));
-  if (isTS && !isAngular) {
+  const isNext = fs.existsSync(path.join(folder, "next.config.js"));
+  if (isTS && !isAngular && !isNext) {
     execSync("npx tsc", { stdio: "inherit", cwd: folder });
   }
   execSync("npm run build", { stdio: "inherit", cwd: folder });
