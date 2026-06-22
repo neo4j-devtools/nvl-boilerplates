@@ -2,6 +2,7 @@ node_modules
 dist
 lib
 .next
+out
 yarn.lock
 package-lock.json
 .angular
