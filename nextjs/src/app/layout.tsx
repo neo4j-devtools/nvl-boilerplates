@@ -1,4 +1,9 @@
 import React from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Neo4j NVL",
+};
 
 export default function RootLayout({
   children,
@@ -7,9 +12,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <title>Neo4j NVL</title>
-      </head>
       <body>{children}</body>
     </html>
   );
