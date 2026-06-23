@@ -167,9 +167,10 @@ function startServers() {
   }
 
   console.log("\nServers running:");
-  for (const s of servers)
+  for (const s of servers) {
     console.log(`${s.project} -> ${s.url} (dist: ${s.rel})`);
-    console.log("\nPress Ctrl+C to stop all servers.");
+  }
+  console.log("\nPress Ctrl+C to stop all servers.");
 
   function teardown() {
     console.log("\nShutting down servers...");

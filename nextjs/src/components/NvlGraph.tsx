@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { InteractiveNvlWrapper } from "@neo4j-nvl/react";
 import type { Node, Relationship } from "@neo4j-nvl/base";
 
@@ -14,7 +14,7 @@ export default function NvlGraph() {
   ]);
 
   return (
-    <div style={{ width: "100%", height: "100vh" }}>
+    <div style={{ width: "100%", height: "75vh" }}>
       <InteractiveNvlWrapper
         nvlOptions={{ initialZoom: 3 }}
         nodes={nodes}
