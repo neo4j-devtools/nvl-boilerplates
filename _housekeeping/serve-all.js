@@ -7,14 +7,14 @@ const ROOT = path.join(__dirname, "..");
 
 function usage() {
   console.log(
-    "Usage: node _housekeeping/serve-all.js [--start-port=3000] [--folders=angular,nextjs,plain,react] [--verbose]"
+    "Usage: node _housekeeping/serve-all.js [--start-port=3000] [--folders=angular,plain,react] [--verbose]"
   );
 }
 
 const argv = process.argv.slice(2);
 const opts = {
   startPort: 3000,
-  folders: ["angular", "nextjs", "plain", "react"],
+  folders: ["angular", "plain", "react"],
   verbose: false,
 };
 
@@ -61,7 +61,7 @@ function findDistDirs(base) {
       }
       if (!stat.isDirectory()) continue;
       if (it === "node_modules") continue;
-      if (it === "dist" || it === "out") results.push(p);
+      if (it === "dist") results.push(p);
       else walk(p);
     }
   }
