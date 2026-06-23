@@ -7,7 +7,7 @@ const ROOT = path.join(__dirname, "..");
 
 function usage() {
   console.log(
-    "Usage: node serve-all-logs.js [--start-port=3000] [--folders=angular,nextjs,plain,react] [--verbose]"
+    "Usage: node _housekeeping/serve-all.js [--start-port=3000] [--folders=angular,nextjs,plain,react] [--verbose]"
   );
 }
 
