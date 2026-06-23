@@ -170,7 +170,7 @@ function startServers() {
   for (const s of servers) {
     console.log(`${s.project} -> ${s.url} (dist: ${s.rel})`);
   }
-  console.log("(Angular and NextJs are not included in this script)");
+  console.log("(Angular and Next.js are not included in this script)");
   console.log("\nPress Ctrl+C to stop all servers.");
 
   function teardown() {
