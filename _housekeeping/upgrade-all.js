@@ -13,7 +13,7 @@ function upgradeDependencies(folder) {
   const upgradeDeps = (deps) => {
     for (const dep in deps) {
       if (dep.startsWith("@neo4j-nvl/")) {
-        execSync(`npm install ${dep}@latest`, {
+        execSync(`npm install ${dep}@latest --save-exact`, {
           stdio: "inherit",
           cwd: folder,
         });

@@ -12,8 +12,8 @@
     "@angular/compiler": "^20.1.0",
     "@angular/core": "^20.1.0",
     "@angular/platform-browser": "^20.1.0",
-    "@neo4j-nvl/base": "1.2.0",
-    "@neo4j-nvl/interaction-handlers": "1.2.0",
+    "@neo4j-nvl/base": "1.2.1",
+    "@neo4j-nvl/interaction-handlers": "1.2.1",
     "rxjs": "~7.8.0",
     "zone.js": "~0.15.0"
   },
