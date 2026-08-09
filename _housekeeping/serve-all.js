@@ -7,14 +7,14 @@ const ROOT = path.join(__dirname, "..");
 
 function usage() {
   console.log(
-    "Usage: node serve-all-logs.js [--start-port=3000] [--folders=angular,plain,react] [--verbose]"
+    "Usage: node _housekeeping/serve-all.js [--start-port=3000] [--folders=plain,react] [--verbose]"
   );
 }
 
 const argv = process.argv.slice(2);
 const opts = {
   startPort: 3000,
-  folders: ["angular", "plain", "react"],
+  folders: ["plain", "react"],
   verbose: false,
 };
 
@@ -166,10 +166,12 @@ function startServers() {
     port += 1;
   }
 
-  console.log("\nServers running:");
-  for (const s of servers)
+  console.log("Servers running:");
+  for (const s of servers) {
     console.log(`${s.project} -> ${s.url} (dist: ${s.rel})`);
-    console.log("\nPress Ctrl+C to stop all servers.");
+  }
+  console.log("(Angular and Next.js are not included in this script)");
+  console.log("\nPress Ctrl+C to stop all servers.");
 
   function teardown() {
     console.log("\nShutting down servers...");
