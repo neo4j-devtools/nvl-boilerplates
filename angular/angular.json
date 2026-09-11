@@ -34,10 +34,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "vite-angular:build:production"
+              "buildTarget": "nvl-angular:build:production"
             },
             "development": {
-              "buildTarget": "vite-angular:build:development"
+              "buildTarget": "nvl-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
