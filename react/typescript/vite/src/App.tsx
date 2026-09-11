@@ -18,7 +18,7 @@ export const App = () => {
         nodes={nodes}
         rels={relationships}
         mouseEventCallbacks={{
-          onZoom: true,
+          onZoomAndPan: true,
           onPan: true,
         }}
       />

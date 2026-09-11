@@ -9,7 +9,7 @@ createRoot(document.getElementById('app')).render(<div style={{ width: '100%', h
     nodes={[{ id: '0', caption: 'graphs' }, { id: '1', caption: 'everywhere' }]}
     rels={[{ from: '0', to: '1', id: '10', caption: 'are' }]}
     mouseEventCallbacks={{
-      onZoom: true,
+      onZoomAndPan: true,
       onPan: true
     }}
   />
